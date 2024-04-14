@@ -16,18 +16,18 @@ First create a `.env`:
 Next, run the following in the same directory as `docker-compose.yml` to start up Pihole.
 
 ```bash
-docker-compose up
+docker compose up -d
 ```
 
 Finally, if you ever need to shut down Pihole, run the following in the same directory as `docker-compose.yml`:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Updating Pihole
 
 1. Download the latest version of the image: `docker pull pihole/pihole`
-2. Shut down Pihole: `docker-compose down`
+2. Shut down Pihole: `docker compose down`
 3. Throw away the old Pihole container: `docker rm -f pihole`
-4. Start up Pihole: `docker-compose up`
+4. Start up Pihole: `docker compose up -d`
